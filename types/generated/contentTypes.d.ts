@@ -808,6 +808,8 @@ export interface ApiEventEvent extends Schema.CollectionType {
     eventId: Attribute.UID & Attribute.CustomField<'plugin::field-uuid.uuid'>;
     tags: Attribute.Relation<'api::event.event', 'manyToMany', 'api::tag.tag'>;
     cover: Attribute.Media<'images'> & Attribute.Required;
+    promotionContent: Attribute.Media<'images' | 'videos', true>;
+    externalLink: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

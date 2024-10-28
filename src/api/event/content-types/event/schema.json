@@ -54,6 +54,18 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "promotionContent": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "externalLink": {
+      "type": "string"
     }
   }
 }
